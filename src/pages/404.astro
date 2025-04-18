@@ -1,0 +1,16 @@
+---
+import { getButtonClass } from "../components/Button/getButtonClass";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404">
+	<div class="flex items-center justify-center">
+		<div class="text-center pt-32">
+			<h1 class="text-5x font-bold mb-4">404</h1>
+			<p class="text-xl mb-4">Oops! Page not found</p>
+			<a href="/" class={getButtonClass({ variant: "solid" })}>
+				Return to Home
+			</a>
+		</div>
+	</div>
+</Layout>
