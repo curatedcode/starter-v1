@@ -10,3 +10,44 @@
 - **AlpineJS**: Perfect for lightweight and declarative interactivity.  
 - **Service Worker**: Seamless offline experiences with caching capabilities.  
 - **PWA Support**: Comprehensive Progressive Web App setup, including Apple icons, favicons, manifest files, and more.  
+
+---
+
+### Commands  
+
+Here are some helpful commands to get started:  
+
+#### Development  
+```bash  
+pnpm dev  
+```
+
+Starts the development server on localhost:3000 with live-reloading enabled.
+
+#### Build
+```bash
+pnpm build
+```
+
+Runs the linter `pnpm lint` and builds the project for production.
+
+#### Preview
+```bash
+pnpm preview
+```
+
+Serves the production build locally on localhost to preview your project.
+
+#### Testing
+```bash
+pnpm test
+```
+
+Runs Playwright tests to ensure end-to-end reliability of your application.
+
+#### Linting
+```bash
+pnpm lint
+```
+
+Runs Biome to check and format your code.
