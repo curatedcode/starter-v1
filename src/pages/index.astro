@@ -1,5 +1,18 @@
 ---
+import AboutSection from "../components/AboutSection.astro";
+import ContactSection from "../components/ContactSection.astro";
+import ProcessSection from "../components/ProcessSection.astro";
+import ServicesSection from "../components/ServicesSection.astro";
+import ServiceAreaSection from "../components/ServiceAreaSection.astro";
+import HeroSection from "../components/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="My Awesome Site" />
+<Layout title="Maloney Legal">
+	<HeroSection />
+	<ServicesSection />
+	<AboutSection />
+	<ProcessSection />
+	<ServiceAreaSection />
+	<ContactSection />
+</Layout>

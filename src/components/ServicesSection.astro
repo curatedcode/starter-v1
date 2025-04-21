@@ -1,0 +1,94 @@
+---
+import { ScaleIcon, ScrollPaperIcon, HomeIcon } from "./Icons";
+
+const services = [
+	{
+		icon: "scroll",
+		title: "Estate Planning & Administration",
+		description:
+			"Comprehensive estate planning services including wills, trusts, powers of attorney, and healthcare directives to secure your legacy and protect your loved ones.",
+		items: [
+			"Wills & Living Wills",
+			"Revocable & Irrevocable Trusts",
+			"Powers of Attorney",
+			"Healthcare Directives",
+			"Business Succession Planning",
+		],
+	},
+	{
+		icon: "scale",
+		title: "Probate",
+		description:
+			"Guiding you through the probate process with compassion and expertise to efficiently settle estates and transfer assets according to Florida law.",
+		items: [
+			"Formal Administration",
+			"Summary Administration",
+			"Ancillary Administration",
+			"Will Contests",
+			"Trust Litigation",
+		],
+	},
+	{
+		icon: "home",
+		title: "Real Estate",
+		description:
+			"Protecting your interests in real estate transactions, from contract drafting and review to closing representation and property disputes.",
+		items: [
+			"Residential Closings",
+			"Commercial Transactions",
+			"Title Reviews",
+			"Contract Drafting",
+			"Deed Preparation",
+		],
+	},
+] as const;
+---
+
+<section id="services" class="py-16 md:py-24 bg-gray-50">
+	<div class="container mx-auto px-4 md:px-6">
+		<div class="text-center mb-16">
+			<h2 class="text-3xl md:text-4xl font-playfair font-bold text-custom-navy">
+				Practice Areas
+			</h2>
+			<p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+				Specialized legal services tailored to protect what matters most to you.
+			</p>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			{
+				services.map((service) => (
+					<div class="rounded-lg border border-gray-4 bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+						<div class="flex flex-col space-y-1.5 p-6 pb-4">
+							{service.icon === "scroll" && (
+								<ScrollPaperIcon class="size-10 text-accent-9 mb-4" />
+							)}
+							{service.icon === "scale" && (
+								<ScaleIcon class="size-10 text-accent-9 mb-4" />
+							)}
+							{service.icon === "home" && (
+								<HomeIcon class="size-10 text-accent-9 mb-4" />
+							)}
+							<div class="tracking-tight text-xl font-playfair font-bold text-custom-navy">
+								{service.title}
+							</div>
+							<div class="text-sm text-gray-600 mt-2">
+								{service.description}
+							</div>
+						</div>
+						<div class="p-6 pt-0">
+							<ul class="space-y-2">
+								{service.items.map((item, i) => (
+									<li class="flex items-start">
+										<span class="inline-block h-1.5 w-1.5 bg-accent-9 rounded-full mt-2 mr-2" />
+										<span class="text-gray-700">{item}</span>
+									</li>
+								))}
+							</ul>
+						</div>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>

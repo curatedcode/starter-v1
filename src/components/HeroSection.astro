@@ -1,0 +1,99 @@
+---
+import Button from "./Button";
+import { getButtonClass } from "./Button/getButtonClass";
+import { PhoneIcon } from "./Icons";
+---
+
+<section
+	class="relative overflow-hidden pb-16 pt-32 md:pb-24 bg-gradient-to-b from-gray-50 to-white"
+>
+	<div class="max-w-7xl mx-auto px-4 md:px-6">
+		<div class="flex flex-col md:flex-row items-center md:mx-auto">
+			<div class="md:w-1/2 md:pr-12 mb-10 md:mb-0">
+				<h2
+					class="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-custom-navy leading-tight"
+				>
+					Experienced Legal Counsel You Can Trust
+				</h2>
+				<p class="mt-4 text-lg text-gray-700 max-w-lg">
+					Providing personalized legal services in Estate Planning, Probate, and
+					Real Estate throughout Florida.
+				</p>
+				<div
+					class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+				>
+					<a href="#contact" class=`${getButtonClass({variant: "solid"})} h-12`>
+						Book Free Consultation
+					</a>
+					<a
+						href="tel:+19413018877"
+						class="flex h-12 items-center justify-center sm:justify-start font-medium text-custom-navy hover:text-accent-9 transition-colors"
+					>
+						<PhoneIcon class="mr-2 size-6" />
+						(941) 301-8877
+					</a>
+				</div>
+				<div class="mt-8 flex items-center -mb-6 md:mb-0">
+					<div class="flex -space-x-4">
+						{
+							[1, 2, 3, 4].map((num) => (
+								<img
+									src={`/images/person-placeholder-${num}.webp`}
+									class="w-10 h-10 rounded-full border-2 border-white"
+									height="40"
+									width="40"
+									aria-hidden="true"
+								/>
+							))
+						}
+					</div>
+					<div class="ml-4">
+						<div class="text-sm font-medium text-custom-navy">
+							Trusted by clients
+						</div>
+						<div class="text-xs text-gray-500">Throughout Florida</div>
+					</div>
+				</div>
+			</div>
+			<img
+				src="/images/stacey-maloney-headshot.webp"
+				alt="Stacey Maloney Headshot"
+				class="relative w-full aspect-square bg-gray-200 rounded-lg shadow-xl md:w-1/2"
+			/>
+
+			{/* Decorative elements */}
+			<div
+				class="absolute -bottom-6 -left-6 w-24 h-24 bg-accent-9 opacity-10 rounded-full"
+			>
+			</div>
+			<div
+				class="absolute -top-6 -right-6 w-32 h-32 bg-custom-navy opacity-10 rounded-full"
+			>
+			</div>
+		</div>
+	</div>
+
+	{/* Trust indicators */}
+	<div class="mx-auto px-4 md:px-6 mt-16 max-w-7xl">
+		<div class="border-t border-gray-200 pt-8">
+			<div
+				class="flex flex-wrap justify-center md:justify-between items-center gap-8"
+			>
+				<div class="text-center md:text-left">
+					<p class="text-sm text-gray-500 font-medium">
+						Florida Bar Association
+					</p>
+				</div>
+				<div class="text-center md:text-left">
+					<p class="text-sm text-gray-500 font-medium">5+ Years Experience</p>
+				</div>
+				<div class="text-center md:text-left">
+					<p class="text-sm text-gray-500 font-medium">Free Consultations</p>
+				</div>
+				<div class="text-center md:text-left">
+					<p class="text-sm text-gray-500 font-medium">By Appointment Only</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

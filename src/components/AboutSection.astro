@@ -1,0 +1,97 @@
+---
+import { HeartIcon, CheckBadgeIcon } from "../components/Icons";
+---
+
+<section id="about" class="py-16 md:py-24">
+	<div class="container mx-auto px-4 md:px-6">
+		<div class="flex flex-col md:flex-row items-center">
+			<div class="md:w-2/5 mb-10 md:mb-0">
+				<div class="relative">
+					<img
+						src="/images/stacey-maloney-headshot.webp"
+						alt="Stacey Maloney Headshot"
+						class="relative w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-xl"
+					/>
+					{/* Decorative elements */}
+					<div
+						class="absolute -top-4 -left-4 w-32 h-32 border-2 border-accent-9 rounded-lg -z-10"
+					>
+					</div>
+					<div
+						class="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-custom-navy rounded-lg -z-10"
+					>
+					</div>
+				</div>
+			</div>
+
+			<div class="md:w-3/5 md:pl-16">
+				<h2
+					class="text-3xl md:text-4xl font-playfair font-bold text-custom-navy mb-6"
+				>
+					About Stacey Maloney
+				</h2>
+
+				<p class="text-gray-700 mb-4">
+					With over 5 years of legal experience, I provide personalized legal
+					services throughout Florida. As an attorney, I believe in building
+					relationships with my clients based on trust, clear communication, and
+					dedicated representation.
+				</p>
+
+				<p class="text-gray-700 mb-4">
+					As the daughter of WWII Navy Veteran Patrick Joseph Maloney, I was
+					raised with strong values of integrity, service, and
+					commitment—principles that guide my practice today.
+				</p>
+
+				<p class="text-gray-700 mb-6">
+					My approach is to understand each client's unique situation and
+					concerns, providing tailored legal solutions that offer peace of mind
+					and protect what matters most to you.
+				</p>
+
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+					<div class="flex items-start">
+						<CheckBadgeIcon
+							class="size-5 text-accent-9 mr-2 mt-1 flex-shrink-0"
+						/>
+						<div>
+							<h3 class="font-medium text-custom-navy">
+								Florida Bar Association
+							</h3>
+							<p class="text-sm text-gray-600">Member in good standing</p>
+						</div>
+					</div>
+					<div class="flex items-start">
+						<CheckBadgeIcon
+							class="size-5 text-accent-9 mr-2 mt-1 flex-shrink-0"
+						/>
+						<div>
+							<h3 class="font-medium text-custom-navy">5+ Years Experience</h3>
+							<p class="text-sm text-gray-600">Practicing in Florida</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-gray-50 p-6 rounded-lg border border-gray-4">
+					<div class="flex items-start">
+						<HeartIcon class="size-5 text-accent-9 mr-3 mt-1 flex-shrink-0" />
+						<div>
+							<h3 class="font-medium text-custom-navy">Community Connection</h3>
+							<p class="text-gray-700">
+								I'm proud to support <a
+									href="http://www.LiquidCastles.org"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-custom-navy hover:text-accent-9 underline"
+									>LiquidCastles.org</a
+								>, a non-profit organization dedicated to making a positive
+								impact in our community.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
