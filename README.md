@@ -17,6 +17,15 @@
 
 Here are some helpful commands to get started:  
 
+#### Fork
+
+```bash
+git clone --depth 1 git@github.com:curatedcode/starter-v1.git my-new-project
+cd my-new-project
+rm -rf .git
+git init
+```
+
 #### Development  
 ```bash  
 pnpm dev  
