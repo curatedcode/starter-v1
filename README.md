@@ -20,7 +20,7 @@ Here are some helpful commands to get started:
 #### Fork
 
 ```bash
-git clone --depth 1 git@github.com:curatedcode/starter-v1.git escape-reality && cd escape-reality && rmdir /s /q .git && git init
+git clone --depth 1 git@github.com:curatedcode/starter-v1.git MY_PROJECT && cd MY_PROJECT && rmdir /s /q .git && git init
 ```
 
 #### Development  
