@@ -8,7 +8,7 @@
 		"preview": "astro preview --host",
 		"astro": "astro",
 		"test": "playwright test",
-		"lint": "biome check --write ."
+		"lint": "pnpm exec prettier . --write"
 	},
 	"dependencies": {
 		"@astrojs/alpinejs": "^0.4.6",
@@ -19,10 +19,11 @@
 	},
 	"devDependencies": {
 		"@axe-core/playwright": "^4.10.1",
-		"@biomejs/biome": "1.9.4",
 		"@playwright/test": "^1.52.0",
 		"@types/alpinejs": "^3.13.11",
 		"@types/node": "^22.14.1",
+		"prettier": "3.5.3",
+		"prettier-plugin-astro": "0.14.1",
 		"typescript": "^5.8.3"
 	}
 }
